@@ -13,7 +13,7 @@ code {
 }
 .posts {
   max-height: 100vh;
-  overflow: "scroll";
+  overflow: scroll;
 }
 .comments {
   max-height: 600px;

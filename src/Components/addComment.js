@@ -26,13 +26,15 @@ const Comment = (props) => {
   return (
     <div>
       <div>Comment:</div>
-      <input
+      <textarea
         name="comment"
         value={comment}
         onChange={(e) => setComment(e.target.value)}
         placeholder="Type a comment"
-      ></input>
-      <button onClick={addComment}>Add comment</button>
+      ></textarea>
+      <button className="btn btn-primary" onClick={addComment}>
+        Add comment
+      </button>
     </div>
   );
 };

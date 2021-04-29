@@ -35,7 +35,10 @@ const Posts = () => {
     <div className="container">
       <h1 className="d-flex justify-content-center">Posts</h1>
       <div className="row">
-        <div className="col-md-8 posts">
+        <div className="col-md-4 col-sm-12">
+          <Comments comments={comments} postId={postId} />
+        </div>
+        <div className="col-md-8 posts col-sm-12">
           {state.postReducer.length &&
             state.postReducer[0].map((post) => {
               return (
@@ -54,9 +57,6 @@ const Posts = () => {
                 </div>
               );
             })}
-        </div>
-        <div className="col-md-4">
-          <Comments comments={comments} postId={postId} />
         </div>
       </div>
     </div>
