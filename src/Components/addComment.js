@@ -22,6 +22,8 @@ const Comment = (props) => {
         id: uuidv4(),
       },
     });
+    setComment("");
+    props.executeScroll();
   };
   return (
     <div>

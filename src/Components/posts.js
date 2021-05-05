@@ -8,6 +8,7 @@ const Posts = () => {
   const [comments, setComments] = useState([]);
   const [postId, setPostId] = useState(0);
   const state = useSelector((state) => state);
+
   const dispatch = useDispatch();
   const firstPostId = 1;
   const seeComments = (id) => {
